@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* reuasable elements css  */
+
+.container{
+    width: 90%;
+    display: flex;
+    
+    
+}
+
+.btn{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: segoe UI;
+    border: none;
+    background-color: #ef4343;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: .4s;
+    cursor: pointer;
+    
+}
+
+.btn:hover{
+    background-color: #ef6a6a;
+}
+
+
+.section_title{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* css for header  */
+
+.header{
+    height: 120px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    color: white;
+}
+
+
+.logo{
+    height: 120px;
+    width: 15%;
+    /* background-color: yellow; */
+    font-size: 60px;
+    text-align: center;
+    line-height: 120px;
+    font-family: 'Lobster', cursive;
+    color: #ef4343;
+    
+}
+
+.header_container{
+    justify-content: space-between;
+}
+
+
+.nav{
+    height: 120px;
+    width: 30%;
+    line-height: 120px;
+    /* background-color: red; */
+
+}
+
+.nav>ul {
+    display: flex;
+    height: 100%;
+
+}
+
+.nav>ul>li{
+    list-style-type: none;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-family: segoe UI;
+    cursor: pointer;
+    transition: .4s;
+}
+
+
+.nav>ul>li:hover {
+    color: #ef4343;
+}
+
+/* css for banner  */
+
+
+.banner {
+
+    height: 95vh;
+    width: 100%;
+    background-color: black;
+    background-image: url('https://images.pexels.com/photos/3347415/pexels-photo-3347415.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    background-position: 0 -200px;
+    display: flex;
+    align-items: center;
+
+}
+
+.banner_details{
+    height: 500px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, .1);
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.padd
+{
+    padding: 20px;
+    
+}
+
+.banner_details h1{
+    font-family: 'Segoe UI';
+    font-size: 80px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-bottom: 30px;
+    
+
+}
+
+/* css for services */
+
+
+.services{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.services_container{
+    margin-top: 30px;
+    flex-wrap: wrap;
+    
+}
+
+
+.service{
+    height: 500px;
+    width: 22%;
+    /* background-color: red; */
+    margin-top: 20px;
+    margin-left: calc(12%/5);
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.service_name{
+    height: 200px;
+    width: 100%;
+    background-color: rgba(0,0,0,.4);
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    /* font-weight: 600; */
+    transition: .5s;
+    
+}
+
+.service:hover > .service_name{
+    height: 100%;
+}
+
+
+
+
+
+
+.service:nth-child(1){
+    background-image: url('https://images.pexels.com/photos/1447375/pexels-photo-1447375.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+}
+
+.service:nth-child(2){
+    background-image: url('https://images.pexels.com/photos/3872624/pexels-photo-3872624.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+}
+
+.service:nth-child(3){
+    background-image: url('https://images.pexels.com/photos/3214944/pexels-photo-3214944.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+}
+
+.service:nth-child(4){
+    background-image: url('https://images.pexels.com/photos/1020016/pexels-photo-1020016.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+}
+
+.service:nth-child(5){
+    background-image: url('https://images.pexels.com/photos/2295744/pexels-photo-2295744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+}
+
+.service:nth-child(6){
+    background-image: url('https://images.pexels.com/photos/6849264/pexels-photo-6849264.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+}
+
+.service:nth-child(7){
+    background-image: url('https://images.pexels.com/photos/2907248/pexels-photo-2907248.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+}
+
+
+/* css for packages  */
+
+.packages{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #bbbbbb;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.packages_container{
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+
+
+.package{
+
+    height: 500px;
+    width: 22%;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: calc(12%/5);
+    display: flex;
+    align-items: center;
+
+}
+
+.pack_title{
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
+}
+
+.pack_desc{
+    font-family: segoe UI;
+    margin-bottom: 15px;
+}
+
+
+.pack_duration,.pack_price{
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 15px;
+    
+}
+
+
+
+.pack_btn{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    
+}
+
+.samples{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.sample{
+    width: 20%;
+    height: 500px;
+    /* background-color: red; */
+    background-size: cover;
+    cursor: pointer;
+    background-position: center;
+}
+
+.sample_overlay{
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0,0,0,.4);
+    transition: .4s;
+}
+
+
+.sample_overlay:hover{
+    background-color: rgba(0,0,0,0);
+}
+
+
+
+.sample:nth-child(1){
+    background-image:url('https://images.pexels.com/photos/624015/pexels-photo-624015.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') ;
+}
+.sample:nth-child(2){
+    background-image:url('https://images.pexels.com/photos/3225529/pexels-photo-3225529.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') ;
+}
+
+.sample:nth-child(3){
+    background-image:url('https://images.pexels.com/photos/3329292/pexels-photo-3329292.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') ;
+}
+.sample:nth-child(4){
+    background-image:url('https://images.pexels.com/photos/3850526/pexels-photo-3850526.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') ;
+}
+.sample:nth-child(5){
+    background-image:url('https://images.pexels.com/photos/5303015/pexels-photo-5303015.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') ;
+}
+.sample:nth-child(6){
+    background-image:url('https://images.pexels.com/photos/4229083/pexels-photo-4229083.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') ;
+}
+.sample:nth-child(7){
+    background-image:url('https://images.pexels.com/photos/1977056/pexels-photo-1977056.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') ;
+}
+.sample:nth-child(8){
+    background-image:url('https://images.pexels.com/photos/2173382/pexels-photo-2173382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') ;
+}
+.sample:nth-child(9){
+    background-image:url('https://images.pexels.com/photos/2165931/pexels-photo-2165931.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') ;
+}
+.sample:nth-child(10){
+    background-image:url('https://images.pexels.com/photos/2814808/pexels-photo-2814808.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') ;
+}
+
+
+/* css for about  */
+
+.about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #efefef;
+}
+
+
+.about_container{
+    font-family: segoe UI;
+    font-size: 17px;
+    margin-top: 30px;
+    line-height: 30px;
+    display: inline;
+}
+
+.highlight{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;    
+}
+
+
+/* css for footer  */
+
+
+
+.footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #4a4a4a;    
+    display: flex;
+    justify-content: center;
+}
+
+.footer_container{
+    justify-content: space-between;
+}
+
+
+.footer_child{
+    height: 300px;
+    width: 30%;
+    color: white;
+    font-family: 'Segoe UI';
+    /* background-color: red; */
+}
+
+
+.footer_child:nth-child(1){
+    font-size: 100px;
+    text-align: center;
+    line-height: 300px;
+    font-family: 'Lobster', cursive;
+    color: #ef4343;
+}
+
+.footer_child:nth-child(2) p{
+    margin-top: 20px;
+}
+
+
+
+
+
+
